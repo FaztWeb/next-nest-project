@@ -13,8 +13,7 @@ import { useRouter } from "next/navigation";
 export function ProductCard({ product }: any) {
   const router = useRouter();
 
-  async function handleRemoveProduct(id) {
-    console.log(id);
+  async function handleRemoveProduct(id: string) {
     await deleteProduct(id);
     router.refresh();
   }

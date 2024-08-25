@@ -19,7 +19,7 @@ async function HomePage() {
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
-        {products.map((product) => (
+        {products.map((product: any) => (
           <ProductCard product={product} key={product.id} />
         ))}
       </div>
